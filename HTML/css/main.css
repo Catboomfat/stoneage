@@ -113,7 +113,9 @@ a:hover {
 .purple:hover {
 	background-color: #8e44ad;
 }
-
+.logo-navbar {
+	margin-left: 20px;
+}
 #myBtn {
     display: none;
     position: fixed;
