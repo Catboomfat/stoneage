@@ -64,18 +64,22 @@
 		</div>
 	</footer>
 
-<script src="https://mcapi.us/scripts/minecraft.js"></script>
-    <script>
-      MinecraftAPI.getServerStatus('play.stone-age.org', { //Add your IP here!
+<div class="server-status">
+    My awesome server is currently <span class="server-online"></span>!
+</div>
+
+<script src="https://mcapi.us/scripts/minecraft.min.js"></script>
+<script>
+    MinecraftAPI.getServerStatus('s.nerd.nu', {
         port: 25565 // optional, only if you need a custom port
-      }, function (err, status) {
+    }, function (err, status) {
         if (err) {
-          return document.querySelector('.server-status').innerHTML = '<font color="#c0392b">Server is offline!</font>';
+            return document.querySelector('.server-status').innerHTML = 'Error loading status';
         }
 
         // you can change these to your own message!
-document.querySelector('.server-online').innerHTML = status.online ? '<font color="#2ecc71">Online <i class="far fa-smile"></i></font><br><br>' : '<font color="red">Offline <i class="far fa-smile"></i></font><br><br>';
-      });
+        document.querySelector('.server-online').innerHTML = status.online ? 'up' : 'down';
+    });
     </script>
 
 	<script>
