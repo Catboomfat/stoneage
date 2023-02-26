@@ -75,7 +75,7 @@
 
         // you can change these to your own message!
 document.querySelector('.server-online').innerHTML = status.online ? '<font color="#2ecc71">Online <i class="far fa-smile"></i></font><br><br>' : '<font color="red">Offline <i class="far fa-smile"></i></font><br><br>';
-      });
+      }); document.querySelector('.playercount').innerHTML = `<p1>${status.players.now + '/' + status.players.max}</p1>`;
     </script>
 
 	<script>
