@@ -549,7 +549,7 @@ a:hover {
 }
 
 #head-gamemodes {
-	background-image: url("../img/5tqD80U.png"); /* Change this to your own image */
+	background-image: url("./img/5tqD80U.png"); /* Change this to your own image */
 	margin: 0;
 	padding: 222px 0px 222px 0px;
 	text-align: center;
