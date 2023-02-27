@@ -76,7 +76,7 @@
         if (err) {
           return document.querySelector('.server-status').innerHTML = '<font color="#c0392b">An error occurred while loading server status, if you see this the server IP has not been set or not set correctly!</font><br><br><img width="333" src="https://media.giphy.com/media/GDnomdqpSHlIs/giphy.gif">';
         }
-		document.querySelector('.server-players').innerHTML = status.players.now
+		document.querySelector('.server-players').innerHTML = status.players.now + "/" + status.players.max
         // you can change these to your own message!
 document.querySelector('.server-online').innerHTML = status.online ? '<font color="#2ecc71">Online <i class="far fa-smile"></i></font><br><br>' : '<font color="red">Offline <i class="far fa-smile"></i></font><br><br>';
       });
